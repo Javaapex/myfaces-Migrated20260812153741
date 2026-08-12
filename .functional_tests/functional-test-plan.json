@@ -1,0 +1,1195 @@
+{
+  "strategy": "source_analyzed_functional_tests",
+  "planning": {
+    "mode": "deterministic_source_analysis",
+    "llmEnhanced": false,
+    "schemaVersion": "functional-test-plan.v3",
+    "endpointsDetected": 11,
+    "uiRoutesDetected": 18,
+    "pagesAnalyzed": 119,
+    "message": "Generated from deep source analysis: 11 API endpoint(s), 18 UI route(s), 119 page(s) analyzed for forms/fields/headings. Tests use actual form field names, page titles, and business flows.",
+    "llmProvider": "offline"
+  },
+  "tests": [
+    {
+      "name": "Verify /bar.xhtml renders with title test and expected content",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/bar.xhtml",
+      "source_file": "bar.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/bar.xhtml"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        }
+      ]
+    },
+    {
+      "name": "Page /bar.xhtml renders without errors",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/bar.xhtml",
+      "source_file": "bar.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/bar.xhtml"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Internal Server Error"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "NullPointerException"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        }
+      ]
+    },
+    {
+      "name": "Verify /basictemplate renders with title Facelets Template and expected content",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/basictemplate",
+      "source_file": "basicTemplate.xhtml",
+      "page_type": "template",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/basictemplate"
+        },
+        {
+          "type": "assert_title",
+          "title": "Facelets Template"
+        }
+      ]
+    },
+    {
+      "name": "Page /basictemplate renders without errors",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/basictemplate",
+      "source_file": "basicTemplate.xhtml",
+      "page_type": "template",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/basictemplate"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Internal Server Error"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "NullPointerException"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        },
+        {
+          "type": "assert_title",
+          "title": "Facelets Template"
+        }
+      ]
+    },
+    {
+      "name": "Verify /foo.xhtml renders with title test and expected content",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/foo.xhtml",
+      "source_file": "foo.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/foo.xhtml"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        }
+      ]
+    },
+    {
+      "name": "Page /foo.xhtml renders without errors",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/foo.xhtml",
+      "source_file": "foo.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/foo.xhtml"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Internal Server Error"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "NullPointerException"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        }
+      ]
+    },
+    {
+      "name": "Verify /foreach-readonly.xhtml renders with title foreach-readonly and expected content",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/foreach-readonly.xhtml",
+      "source_file": "foreach-readonly.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/foreach-readonly.xhtml"
+        },
+        {
+          "type": "assert_title",
+          "title": "foreach-readonly"
+        }
+      ]
+    },
+    {
+      "name": "Page /foreach-readonly.xhtml renders without errors",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/foreach-readonly.xhtml",
+      "source_file": "foreach-readonly.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/foreach-readonly.xhtml"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Internal Server Error"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "NullPointerException"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        },
+        {
+          "type": "assert_title",
+          "title": "foreach-readonly"
+        }
+      ]
+    },
+    {
+      "name": "Verify /form-inputs.xhtml renders with title form-inputs and expected content",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/form-inputs.xhtml",
+      "source_file": "form-inputs.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/form-inputs.xhtml"
+        },
+        {
+          "type": "assert_title",
+          "title": "form-inputs"
+        }
+      ]
+    },
+    {
+      "name": "Page /form-inputs.xhtml renders without errors",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/form-inputs.xhtml",
+      "source_file": "form-inputs.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/form-inputs.xhtml"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Internal Server Error"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "NullPointerException"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        },
+        {
+          "type": "assert_title",
+          "title": "form-inputs"
+        }
+      ]
+    },
+    {
+      "name": "Verify /index.xhtml renders with title benchmark and expected content",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/index.xhtml",
+      "source_file": "index.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/index.xhtml"
+        },
+        {
+          "type": "assert_title",
+          "title": "benchmark"
+        },
+        {
+          "type": "assert_visible",
+          "text": "MyFaces / Mojarra lifecycle benchmark"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "a[href*='table-readonly.xhtml']"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "a[href*='repeat-readonly.xhtml']"
+        }
+      ]
+    },
+    {
+      "name": "Page /index.xhtml renders without errors",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/index.xhtml",
+      "source_file": "index.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/index.xhtml"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Internal Server Error"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "NullPointerException"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        },
+        {
+          "type": "assert_title",
+          "title": "benchmark"
+        },
+        {
+          "type": "assert_visible",
+          "text": "MyFaces / Mojarra lifecycle benchmark"
+        }
+      ]
+    },
+    {
+      "name": "Verify /myprotectedview.xhtml renders with title test and expected content",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/myprotectedview.xhtml",
+      "source_file": "myProtectedView.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/myprotectedview.xhtml"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        }
+      ]
+    },
+    {
+      "name": "Page /myprotectedview.xhtml renders without errors",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/myprotectedview.xhtml",
+      "source_file": "myProtectedView.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/myprotectedview.xhtml"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Internal Server Error"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "NullPointerException"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        }
+      ]
+    },
+    {
+      "name": "Verify /nested-readonly.xhtml renders with title nested-readonly and expected content",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/nested-readonly.xhtml",
+      "source_file": "nested-readonly.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/nested-readonly.xhtml"
+        },
+        {
+          "type": "assert_title",
+          "title": "nested-readonly"
+        }
+      ]
+    },
+    {
+      "name": "Page /nested-readonly.xhtml renders without errors",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/nested-readonly.xhtml",
+      "source_file": "nested-readonly.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/nested-readonly.xhtml"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Internal Server Error"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "NullPointerException"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        },
+        {
+          "type": "assert_title",
+          "title": "nested-readonly"
+        }
+      ]
+    },
+    {
+      "name": "Verify /plainhtml.xhtml renders with title minimal test html and expected content",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/plainhtml.xhtml",
+      "source_file": "plainHtml.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/plainhtml.xhtml"
+        },
+        {
+          "type": "assert_title",
+          "title": "minimal test html"
+        }
+      ]
+    },
+    {
+      "name": "Page /plainhtml.xhtml renders without errors",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/plainhtml.xhtml",
+      "source_file": "plainHtml.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/plainhtml.xhtml"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Internal Server Error"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "NullPointerException"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        },
+        {
+          "type": "assert_title",
+          "title": "minimal test html"
+        }
+      ]
+    },
+    {
+      "name": "Verify /repeat-readonly.xhtml renders with title repeat-readonly and expected content",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/repeat-readonly.xhtml",
+      "source_file": "repeat-readonly.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/repeat-readonly.xhtml"
+        },
+        {
+          "type": "assert_title",
+          "title": "repeat-readonly"
+        }
+      ]
+    },
+    {
+      "name": "Page /repeat-readonly.xhtml renders without errors",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/repeat-readonly.xhtml",
+      "source_file": "repeat-readonly.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/repeat-readonly.xhtml"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Internal Server Error"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "NullPointerException"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        },
+        {
+          "type": "assert_title",
+          "title": "repeat-readonly"
+        }
+      ]
+    },
+    {
+      "name": "Verify /some-folder/bar.xhtml renders with title test and expected content",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/some-folder/bar.xhtml",
+      "source_file": "bar.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/some-folder/bar.xhtml"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        }
+      ]
+    },
+    {
+      "name": "Page /some-folder/bar.xhtml renders without errors",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/some-folder/bar.xhtml",
+      "source_file": "bar.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/some-folder/bar.xhtml"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Internal Server Error"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "NullPointerException"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        }
+      ]
+    },
+    {
+      "name": "Verify /somefolder/bar.xhtml renders with title test and expected content",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/somefolder/bar.xhtml",
+      "source_file": "bar.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/somefolder/bar.xhtml"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        }
+      ]
+    },
+    {
+      "name": "Page /somefolder/bar.xhtml renders without errors",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/somefolder/bar.xhtml",
+      "source_file": "bar.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/somefolder/bar.xhtml"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Internal Server Error"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "NullPointerException"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        }
+      ]
+    },
+    {
+      "name": "Verify /table-readonly.xhtml renders with title table-readonly and expected content",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/table-readonly.xhtml",
+      "source_file": "table-readonly.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/table-readonly.xhtml"
+        },
+        {
+          "type": "assert_title",
+          "title": "table-readonly"
+        }
+      ]
+    },
+    {
+      "name": "Page /table-readonly.xhtml renders without errors",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/table-readonly.xhtml",
+      "source_file": "table-readonly.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/table-readonly.xhtml"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Internal Server Error"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "NullPointerException"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        },
+        {
+          "type": "assert_title",
+          "title": "table-readonly"
+        }
+      ]
+    },
+    {
+      "name": "Submit form on /test1-protocol.xhtml to boog.html and verify result",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/test1-protocol.xhtml",
+      "source_file": "test1-protocol.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/test1-protocol.xhtml"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        },
+        {
+          "type": "assert_visible",
+          "text": "Protocol Test"
+        },
+        {
+          "type": "assert_visible",
+          "text": "protocol testcase1"
+        },
+        {
+          "type": "click",
+          "locator": "#form1 button, #form1 input[type=submit]"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "500"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Exception"
+        }
+      ]
+    },
+    {
+      "name": "Page /test1-protocol.xhtml renders without errors",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/test1-protocol.xhtml",
+      "source_file": "test1-protocol.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/test1-protocol.xhtml"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Internal Server Error"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "NullPointerException"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        },
+        {
+          "type": "assert_visible",
+          "text": "Protocol Test"
+        }
+      ]
+    },
+    {
+      "name": "Verify /test2-viewbody.xhtml renders with title test and expected content",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/test2-viewbody.xhtml",
+      "source_file": "test2-viewbody.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/test2-viewbody.xhtml"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        },
+        {
+          "type": "assert_visible",
+          "text": "Viewbody Test"
+        },
+        {
+          "type": "assert_visible",
+          "text": "After triggering this test the entire page should be replaced by the test result"
+        }
+      ]
+    },
+    {
+      "name": "Page /test2-viewbody.xhtml renders without errors",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/test2-viewbody.xhtml",
+      "source_file": "test2-viewbody.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/test2-viewbody.xhtml"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Internal Server Error"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "NullPointerException"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        },
+        {
+          "type": "assert_visible",
+          "text": "Viewbody Test"
+        }
+      ]
+    },
+    {
+      "name": "Verify /test3-chain.xhtml renders with title test and expected content",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/test3-chain.xhtml",
+      "source_file": "test3-chain.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/test3-chain.xhtml"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        },
+        {
+          "type": "assert_visible",
+          "text": "Chain Test"
+        },
+        {
+          "type": "assert_visible",
+          "text": "This test case tests the faces.util.chain function"
+        }
+      ]
+    },
+    {
+      "name": "Page /test3-chain.xhtml renders without errors",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/test3-chain.xhtml",
+      "source_file": "test3-chain.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/test3-chain.xhtml"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Internal Server Error"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "NullPointerException"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        },
+        {
+          "type": "assert_visible",
+          "text": "Chain Test"
+        }
+      ]
+    },
+    {
+      "name": "Submit form on /test4-tablebasic.xhtml to boog.html and verify result",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/test4-tablebasic.xhtml",
+      "source_file": "test4-tablebasic.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/test4-tablebasic.xhtml"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        },
+        {
+          "type": "assert_visible",
+          "text": "Table Tests"
+        },
+        {
+          "type": "click",
+          "locator": "#form2 button, #form2 input[type=submit]"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "500"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Exception"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "table"
+        }
+      ]
+    },
+    {
+      "name": "Page /test4-tablebasic.xhtml renders without errors",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/test4-tablebasic.xhtml",
+      "source_file": "test4-tablebasic.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/test4-tablebasic.xhtml"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Internal Server Error"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "NullPointerException"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        },
+        {
+          "type": "assert_visible",
+          "text": "Table Tests"
+        }
+      ]
+    },
+    {
+      "name": "Verify /test5-viewbody-full-response.xhtml renders with title test and expected content",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/test5-viewbody-full-response.xhtml",
+      "source_file": "test5-viewbody-full-response.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/test5-viewbody-full-response.xhtml"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        },
+        {
+          "type": "assert_visible",
+          "text": "View Body replacement in Full Page Response"
+        }
+      ]
+    },
+    {
+      "name": "Page /test5-viewbody-full-response.xhtml renders without errors",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/test5-viewbody-full-response.xhtml",
+      "source_file": "test5-viewbody-full-response.xhtml",
+      "page_type": "html",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/test5-viewbody-full-response.xhtml"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "Internal Server Error"
+        },
+        {
+          "type": "assert_not_visible",
+          "text": "NullPointerException"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        },
+        {
+          "type": "assert_title",
+          "title": "test"
+        },
+        {
+          "type": "assert_visible",
+          "text": "View Body replacement in Full Page Response"
+        }
+      ]
+    },
+    {
+      "name": "Verify servlet /*.xhtml (FacesServlet) business logic",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/*.xhtml",
+      "source_file": "web.xml",
+      "controller": "FacesServlet",
+      "route_type": "servlet",
+      "method": "GET",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/*.xhtml"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        }
+      ]
+    },
+    {
+      "name": "Verify servlet /*.xhtml (FacesServlet) business logic",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/*.xhtml",
+      "source_file": "web.xml",
+      "controller": "FacesServlet",
+      "route_type": "servlet",
+      "method": "POST",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/*.xhtml"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        }
+      ]
+    },
+    {
+      "name": "Verify servlet /*.mockup (ResponseMockup22) business logic",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/*.mockup",
+      "source_file": "web.xml",
+      "controller": "ResponseMockup22",
+      "route_type": "servlet",
+      "method": "GET",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/*.mockup"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        }
+      ]
+    },
+    {
+      "name": "Verify servlet /*.mockup (ResponseMockup22) business logic",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/*.mockup",
+      "source_file": "web.xml",
+      "controller": "ResponseMockup22",
+      "route_type": "servlet",
+      "method": "POST",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/*.mockup"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        }
+      ]
+    },
+    {
+      "name": "Verify servlet /*.jsf (FacesServlet) business logic",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/*.jsf",
+      "source_file": "web.xml",
+      "controller": "FacesServlet",
+      "route_type": "servlet",
+      "method": "GET",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/*.jsf"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        }
+      ]
+    },
+    {
+      "name": "Verify servlet /*.jsf (FacesServlet) business logic",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/*.jsf",
+      "source_file": "web.xml",
+      "controller": "FacesServlet",
+      "route_type": "servlet",
+      "method": "POST",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/*.jsf"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        }
+      ]
+    },
+    {
+      "name": "Verify servlet /faces (FacesServlet) business logic",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/faces",
+      "source_file": "web.xml",
+      "controller": "FacesServlet",
+      "route_type": "servlet",
+      "method": "GET",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/faces"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        }
+      ]
+    },
+    {
+      "name": "Verify servlet /faces (FacesServlet) business logic",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/faces",
+      "source_file": "web.xml",
+      "controller": "FacesServlet",
+      "route_type": "servlet",
+      "method": "POST",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/faces"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        }
+      ]
+    },
+    {
+      "name": "Verify servlet /foo (FacesServlet) business logic",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/foo",
+      "source_file": "web.xml",
+      "controller": "FacesServlet",
+      "route_type": "servlet",
+      "method": "GET",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/foo"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        }
+      ]
+    },
+    {
+      "name": "Verify servlet /foo (FacesServlet) business logic",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/foo",
+      "source_file": "web.xml",
+      "controller": "FacesServlet",
+      "route_type": "servlet",
+      "method": "POST",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/foo"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        }
+      ]
+    },
+    {
+      "name": "Verify servlet /perf-stats (PerfStatsServlet) business logic",
+      "tool": "SELENIUM",
+      "type": "legacy-ui",
+      "route": "/perf-stats",
+      "source_file": "PerfStatsServlet.java",
+      "controller": "PerfStatsServlet",
+      "route_type": "servlet",
+      "method": "GET",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "/perf-stats"
+        },
+        {
+          "type": "assert_visible",
+          "locator": "body"
+        }
+      ]
+    }
+  ]
+}

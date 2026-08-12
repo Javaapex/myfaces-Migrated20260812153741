@@ -1,0 +1,20 @@
+[
+  {
+    "name": "GeneratedSeleniumFunctionalTest",
+    "status": "broken",
+    "statusDetails": {
+      "message": "Maven build completed with errors (exit code != 0)."
+    },
+    "stage": "finished",
+    "start": 1786529653380,
+    "stop": 1786529653380,
+    "parameters": [],
+    "fullName": "com.example.GeneratedSeleniumFunctionalTest",
+    "labels": [
+      {
+        "name": "suite",
+        "value": "GeneratedSeleniumFunctionalTest"
+      }
+    ]
+  }
+]
